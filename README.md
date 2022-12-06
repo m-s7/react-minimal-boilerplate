@@ -15,7 +15,7 @@ A bare minimum React Boilerplate.
 ### Clone Repository
 
 ```
-git clone 
+git clone https://github.com/m-s7/react-minimal-boilerplate.git
 ```
 
 ### Install dependencies

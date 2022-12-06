@@ -9,7 +9,7 @@ const config: Config = {
 	coverageProvider: 'v8',
 	moduleNameMapper: {
 		'^.+\\.(css|less|scss|sass)$': 'babel-jest',
-		// '^.+\\.svg$': 'jest-svg-transformer',
+		"^.+\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/file-mock.ts",
 		'^@/(.*)$': '<rootDir>/src/$1',
 	},
 	transform: {
