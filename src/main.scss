@@ -1,0 +1,65 @@
+$primary: #454d55;
+$secondary: #2596be;
+$textPrimary: #f1f1f1;
+$marginXSmall: .6rem;
+$marginSmall: 1rem;
+$marginMedium: 2rem;
+$marginLarge: 3rem;
+$paddingSmall: 1rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  background-color: $primary;
+  color: $textPrimary;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-main {
+  width: 14rem;
+  margin-bottom: $marginMedium;
+}
+
+.heading-main {
+  margin-bottom: $marginXSmall;
+}
+
+.technologies {
+  font-size: 1rem;
+}
+
+.hello {
+  padding: $paddingSmall;
+}
+
+.hello.hidden {
+  visibility: hidden;
+}
+
+.hello.fade-out {
+  animation: fadeOut ease 1s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
